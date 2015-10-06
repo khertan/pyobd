@@ -357,7 +357,7 @@ class MyApp(wx.App):
         else:
           self.configfilepath=os.environ['HOME']+'/.pyobdrc'
         if self.config.read(self.configfilepath)==[]:
-          self.COMPORT="/dev/ttyACM0"
+          self.COMPORT="/dev/ttyUSB0"
           self.RECONNATTEMPTS=5
           self.SERTIMEOUT=2
         else:
